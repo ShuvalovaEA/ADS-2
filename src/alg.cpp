@@ -26,7 +26,7 @@ double calcItem(double x, uint16_t n) {
 
 double expn(double x, uint16_t count) {
     double result = 0;
-    for (int i = 1; i <= count; i++) {
+    for (int i = 0; i <= count; i++) {
         result += calcItem(x, i);
     }
     return result;
@@ -34,7 +34,7 @@ double expn(double x, uint16_t count) {
 
 double sinn(double x, uint16_t count) {
     double result = 0;
-    for (int i = 0; i <= count; i++) {
+    for (int i = 1; i <= count; i++) {
         result += calcItem(x, (2 * i) - 1) * pown(-1, i-1);
     }
     return result;
